@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://do73dpwwn25qc"]
+
+[ext_resource type="Script" path="res://Bg.gd" id="1_hdggk"]
+[ext_resource type="Texture2D" uid="uid://dgg7sfwbysms0" path="res://war-pixel-art-2d-game-backgrounds/PNG/War2/Bright/War2.png" id="1_p8w37"]
+
+[node name="Bg" type="ParallaxBackground"]
+script = ExtResource("1_hdggk")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="War2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576, 327)
+scale = Vector2(0.6, 0.605556)
+texture = ExtResource("1_p8w37")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
