@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dnhyrkl4ulpaq"]
+[gd_scene load_steps=6 format=3 uid="uid://dnhyrkl4ulpaq"]
 
 [ext_resource type="PackedScene" uid="uid://do73dpwwn25qc" path="res://Bg.tscn" id="1_7nthv"]
 [ext_resource type="PackedScene" uid="uid://b0y11iucy3oqa" path="res://Player/Player.tscn" id="1_x18mt"]
@@ -8,6 +8,9 @@ size = Vector2(5152.5, 145.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gr65r"]
 size = Vector2(194.125, 696.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1n1t3"]
+size = Vector2(330, 162)
 
 [node name="World" type="Node2D"]
 
@@ -26,3 +29,9 @@ shape = SubResource("RectangleShape2D_dpu3g")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-88, 872)
 shape = SubResource("RectangleShape2D_gr65r")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(1048, 320)
+shape = SubResource("RectangleShape2D_1n1t3")
